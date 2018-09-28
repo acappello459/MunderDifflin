@@ -1,0 +1,26 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+#wrapper{
+  height:33%;
+  width:100%;
+}
+
+#a{
+  /* background-color: blue; */
+  /* height: 33%;
+  width: 100%; */
+}
+#b{
+  background-color: red;
+}
+#c{
+  background-color: blue;
+}
+
+#logo{
+  height: 10%;
+  width: 20%;
+}
