@@ -3,24 +3,103 @@
   margin: 0px;
 }
 
-#wrapper{
-  height:33%;
+.wrapper{
+  height:75%;
   width:100%;
+  font-family: Verdana,sans-serif;
+
 }
 
 #a{
-  /* background-color: blue; */
-  /* height: 33%;
-  width: 100%; */
+  background-color: #3332CC;
+  height: 75%;
 }
-#b{
-  background-color: red;
-}
-#c{
-  background-color: blue;
+.pictureroll{
+  /* border: 1px solid blue; */
+  height: 300px;
+  width: 60%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-name: pictures;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  background-position: center;
+  margin: 9%;
+  margin-left: 40%;
+  position: absolute;
+  border-radius: 50%;
 }
 
+#pA{
+  /* border: 1px solid green; */
+  position: relative;
+  padding: 50px;
+  padding-top: 20%;
+  color: white;
+}
+/* #a h1{
+  margin-left: 30%;
+} */
+
+#b{
+  background-color: white;
+  height: 75%;
+}
+
+#pB{
+  width: 400px;
+  margin-left: 60%;
+  position: relative;
+  padding: 50px;
+  padding-top: 5%;
+  color: #3332CC;
+}
+#graph{
+  float: left;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+#c{
+  background-color: #3332CC;
+  height: 75%;
+
+}
+
+#pC{
+  width: 400px;
+  color: white;
+  margin-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* display: inline-block; */
+}
+.footer{
+  border: 2px solid;
+  width: 25%;
+  margin-left: 60%;
+  margin-top: -5%;
+  height: 100px;
+  /* position: relative; */
+}
+.footer ul{
+  list-style: none;
+}
 #logo{
   height: 10%;
-  width: 20%;
+  width: 30%;
+}
+
+@keyframes pictures{
+  0% {background-image: url('images/office1.jpeg');}
+  10% {background-image: url('images/office2.jpeg');}
+  20% {background-image: url('images/office3.jpeg');}
+  30% {background-image: url('images/office4.jpeg');}
+  40% {background-image: url('images/office5.jpeg');}
+  50% {background-image: url('images/office6.jpeg');}
+  60% {background-image: url('images/office7.jpeg');}
+  70% {background-image: url('images/office8.jpeg');}
+  80% {background-image: url('images/office9.jpeg');}
+  90% {background-image: url('images/office10.jpeg');}
+  100% {background-image: url('images/office11.jpeg');}
 }
