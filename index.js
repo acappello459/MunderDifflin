@@ -77,7 +77,8 @@ function popup(){
   modalInput.style.width ='30%';
   modalInput.style.height = '3%';
   modalInput.style.marginBottom = '500px';
-  modalInput.style.marginLeft = '35%'
+  modalInput.style.marginLeft = '35%';
+  modalInput.type ='email';
   modal.appendChild(modalInput)
 
 //enter button styling
@@ -117,16 +118,16 @@ modalInput.addEventListener('click', function(){
   modalInput.value = ''
 })
 
-var newArr = [];
+var s = modalInput.value
 //eventlistener that when you click the enter button it checks to see if there is an @ symbol. if not it will say to reenter the email address
-enter.addEventListener('click', function(){
-
-  newArr.push(modalInput.value)
-  for(let i = 0; i<newArr.length; i++){
-  if(newArr[i][i] == '@'){
-    console.log('Thanks')
-  }else{
-    console.log('try again')
-  }
+enter.addEventListener('click', function (string){
+for(i = 0; i<modalInput.value.length;i++)
+if(modalInput.value.includes('@')==true){
+  alert('Thank you, we look forward to doing business with you!')
+  modalInput.value = '';
+}else {
+  alert('This is not a valid email address, please try again.')
+  modalInput.value = '';
 }
+
 })
