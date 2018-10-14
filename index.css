@@ -2,7 +2,10 @@
   padding: 0px;
   margin: 0px;
 }
-
+body{
+  margin: 0px;
+  padding: 0px;
+}
 
 .wrapper{
   height:75%;
@@ -18,15 +21,15 @@
 .pictureroll{
   /* border: 1px solid blue; */
   height: 300px;
-  width: 60%;
-  background-size: contain;
+  width: 30%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   animation-name: pictures;
   animation-duration: 60s;
   animation-iteration-count: infinite;
   background-position: center;
   margin: 9%;
-  margin-left: 40%;
+  margin-left: 60%;
   position: absolute;
   border-radius: 50%;
 }

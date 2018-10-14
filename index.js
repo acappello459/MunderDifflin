@@ -42,15 +42,15 @@ wrapApA.style.margin = '20px'
 function popup(){
 
   // The styling of the Modal
-  modal.style.height = '750px';
-  modal.style.width = '75%';
+  modal.style.height = '75%';
+  modal.style.width = '60%';
   modal.style.marginTop = '-100%'
-  modal.style.marginLeft = '15%'
+  modal.style.marginLeft = '20%'
   modal.style.backgroundColor = '#42a4f4';
   modal.style.backgroundImage = 'none'
   modal.style.zIndex = '3'
   modal.style.position = 'absolute';
-  // modal.style.opacity = '.9'
+  modal.style.opacity = '.9'
   document.body.appendChild(modal)
 
 // The styling of the x out button
@@ -70,7 +70,7 @@ function popup(){
   modalText.style.margin= '5% auto';
   modalText.style.textAlign = 'center';
   modalText.innerHTML ="Please enter your email address below. We will add you to a call list so that you can recieve updates on our stock, prices, and recieve coupon deals. Save money by doing business with Munder Difflin!";
-  modalText.style.fontSize = '3em'
+  modalText.style.fontSize = '2em'
   modal.appendChild(modalText)
 
 //input box asking for the user's email address
@@ -125,6 +125,8 @@ for(i = 0; i<modalInput.value.length;i++)
 if(modalInput.value.includes('@')==true){
   alert('Thank you, we look forward to doing business with you!')
   modalInput.value = '';
+  modal.style.display = 'none';
+    xButton.style.display = 'none';
 }else {
   alert('This is not a valid email address, please try again.')
   modalInput.value = '';
