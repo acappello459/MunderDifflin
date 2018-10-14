@@ -1,0 +1,116 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper{
+  height:75%;
+  width:100%;
+  font-family: Verdana,sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+}
+
+#a{
+  background-color: #3332CC;
+  height: 75%;
+}
+.pictureroll{
+  /* border: 1px solid blue; */
+  height: 300px;
+  width: 30%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation-name: pictures;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  background-position: center;
+  margin: 9%;
+  margin-left: 60%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#pA{
+  /* border: 1px solid green; */
+  position: relative;
+  padding: 50px;
+  padding-top: 20%;
+  color: white;
+}
+/* #a h1{
+  margin-left: 30%;
+} */
+
+#b{
+  background-color: white;
+  height: 75%;
+}
+
+#pB{
+  width: 400px;
+  margin-left: 60%;
+  position: relative;
+  padding: 50px;
+  padding-top: 5%;
+  color: #3332CC;
+}
+#graph{
+  float: left;
+  margin-top: 7.5%;
+  margin-left: 5%;
+}
+
+#c{
+  background-color: #3332CC;
+  height: 75%;
+
+}
+
+#pC{
+  width: 400px;
+  color: white;
+  margin-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* display: inline-block; */
+}
+.footer{
+  border: 2px solid;
+  width: 25%;
+  margin-left: 70%;
+  margin-top: -25%;
+  height: 20%;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+#contact{
+  text-align: center;
+  font-size: 2em;
+}
+
+#facebook{
+  height: 100px;
+  width: 100px;
+  border-radius: 30%;
+  margin: 5px;
+  /* margin-left: 10%; */
+}
+
+#twitter{
+  height: 100px;
+  width: 100px;
+  border-radius: 25%;
+
+}
+#logo{
+  height: 10%;
+  width: 30%;
+}

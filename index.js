@@ -21,37 +21,39 @@
 // Do my animations and event callbacks improve the user experience?
 // Does my website describe its intent?
 var logo = document.getElementById('logo')
-var wrapApA = document.getElementById('pA')
-var modal = document.createElement('div')
-var container = document.getElementsByClassName('container')
+var wrapA = document.getElementById('a')
+var modal = document.getElementById('modal')
+// var container = document.getElementsByClassName('container')
 var xButton = document.createElement('button')
 var enter = document.createElement('button')
 var modalText = document.createElement('div')
 var modalInput = document.createElement('input')
 // var wrapAimg = document.createElement('img')
 
-logo.style.float = 'left'
-logo.style.borderRadius = '0% 25% 0% 25%'
-logo.style.position = 'relatve'
+// logo.style.float = 'left'
+// logo.style.borderRadius = '0% 25% 0% 25%'
+// logo.style.position = 'relatve'
 
 // logo.style.margin = '-125px 0px'
 // document.body.appendChild(logo)
 
-wrapApA.style.width = '35%'
-wrapApA.style.margin = '20px'
+// wrapApA.style.width = '35%'
+// wrapApA.style.margin = '20px'
 function popup(){
 
   // The styling of the Modal
-  modal.style.height = '75%';
-  modal.style.width = '60%';
-  modal.style.marginTop = '-100%'
-  modal.style.marginLeft = '20%'
+  modal.style.height = '100%';
+  // modal.style.width = '50%';
+  // modal.style.marginTop = '10%'
+  // modal.style.marginLeft = '20%'
   modal.style.backgroundColor = '#42a4f4';
   modal.style.backgroundImage = 'none'
   modal.style.zIndex = '3'
   modal.style.position = 'absolute';
   modal.style.opacity = '.9'
-  document.body.appendChild(modal)
+  // modal.style.display = 'flex'
+  // modal.style.justifyContent = 'center'
+  a.appendChild(modal)
 
 // The styling of the x out button
   xButton.style.height = '30px';
@@ -101,7 +103,7 @@ function popup(){
 // x.addListener(modalSize)
 
 
-//function that tells the modal to pop up 1 second after the page loads
+// function that tells the modal to pop up 1 second after the page loads
 function start(){
   setTimeout(popup,300)
 }
