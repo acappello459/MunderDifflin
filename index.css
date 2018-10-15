@@ -21,6 +21,33 @@
   borderRadius: 0% 25% 0% 25%;
   position: relative
 }
+#navbar{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  border: 2px solid;
+  height: 50px;
+}
+
+#navbar ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 1%;
+  color: white;
+  list-style: none;
+}
+
+#about{
+  grid-column: 1/2;
+}
+
+#company{
+  grid-column: 2/3;
+}
+
+#contactUs{
+  grid-column: 3/4;
+}
 .pictureroll{
   /* border: 1px solid blue; */
   height: 300px;
